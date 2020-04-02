@@ -11,3 +11,6 @@ Read our full TOS here: https://bghddevelopment.com/tos
 Support: https://bghddevelopment.com/discord
 
 Wiki: https://wiki.bghddevelopment.com/books/punishmentgui---litebansgui-advancedbangui
+
+...
+EDITED BY xS3CCC
