@@ -56,6 +56,7 @@ public class Punish implements Listener, CommandExecutor {
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("ChatOffensesLocation"), Items.ChatOffences(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("GeneralOffensesLocation"), Items.GeneralOffences(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("ClientModOffensesLocation"), Items.ClientModOffences(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("AdmitidoOffensesLocation"), Items.AdmitidoOffenses(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity1MuteLocation"), Items.Severity1Mute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity2MuteLocation"), Items.Severity1Mute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity3MuteLocation"), Items.Severity1Mute(p));
