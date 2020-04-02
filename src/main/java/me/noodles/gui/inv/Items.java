@@ -47,6 +47,14 @@ public class Items {
         );
     }
 
+    public static ItemStack AdmitidoOffences(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("AdmitidoOffensesItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("AdmitidoOffensesName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("AdmitidoOffensesLore")
+        );
+    }
+    
     public static ItemStack GeneralOffences(Player p) {
         return createItemFromConfig(
             PunishmentGUI.getPlugin().getGuiItems().getString("GeneralOffensesItem"),
@@ -102,6 +110,22 @@ public class Items {
             PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity1MuteLore")
         );
     }
+    
+    public static ItemStack Severity2Mute(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2MuteItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2MuteName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity2MuteLore")
+        );
+    }
+    
+    public static ItemStack Severity3Mute(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3MuteItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3MuteName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity3MuteLore")
+        );
+    }
 
     public static ItemStack Warning(Player p) {
         return createItemFromConfig(
@@ -118,6 +142,22 @@ public class Items {
             PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity1GeneralBanLore")
         );
     }
+    
+    public static ItemStack Severity2GeneralBan(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2GeneralBanItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2GeneralBanName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity2GeneralBanLore")
+        );
+    }
+    
+    public static ItemStack Severity3GeneralBan(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3GeneralBanItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3GeneralBanName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity3GeneralBanLore")
+        );
+    }
 
     public static ItemStack Severity1ClientBan(Player p) {
         return createItemFromConfig(
@@ -128,14 +168,6 @@ public class Items {
 
     }
 
-    public static ItemStack Severity2Mute(Player p) {
-        return createItemFromConfig(
-            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2MuteItem"),
-            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2MuteName"),
-            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity2MuteLore")
-        );
-    }
-
     public static ItemStack Severity2ClientBan(Player p) {
         return createItemFromConfig(
             PunishmentGUI.getPlugin().getGuiItems().getString("Severity2ClientBanItem"),
@@ -144,19 +176,35 @@ public class Items {
         );
     }
 
-    public static ItemStack Severity3Mute(Player p) {
-        return createItemFromConfig(
-            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3MuteItem"),
-            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3MuteName"),
-            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity3MuteLore")
-        );
-    }
-
     public static ItemStack Severity3ClientBan(Player p) {
         return createItemFromConfig(
             PunishmentGUI.getPlugin().getGuiItems().getString("Severity3ClientBanItem"),
             PunishmentGUI.getPlugin().getGuiItems().getString("Severity3ClientBanName"),
             PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity3ClientBanLore")
+        );
+    }
+    
+    public static ItemStack Severity1AdmitidoBan(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity1AdmitidoBanItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity1AdmitidoBanName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity1AdmitidoBanLore")
+        );
+    }
+    
+    public static ItemStack Severity2AdmitidoBan(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2AdmitidoBanItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity2AdmitidoBanName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity2AdmitidoBanLore")
+        );
+    }
+    
+    public static ItemStack Severity3AdmitidoBan(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3AdmitidoBanItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("Severity3AdmitidoBanName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("Severity3AdmitidoBanLore")
         );
     }
 
