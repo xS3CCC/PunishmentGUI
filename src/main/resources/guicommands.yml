@@ -33,6 +33,12 @@ Severity3MuteCommand: "/mute %target% %t% %reason% -s"
 #Serv 1 General Ban
 Severity1GeneralBanCommand: "/ban %target% %t% %reason% -s"
 
+#Serv 2 General Ban
+Severity2GeneralBanCommand: "/ban %target% %t% %reason% -s"
+
+#Serv 3 General Ban
+Severity3GeneralBanCommand: "/ban %target% %t% %reason% -s"
+
 #Serv 1 Client Ban
 Severity1ClientBanCommand: "/ban %target% %t% %reason% -s"
 
@@ -41,6 +47,15 @@ Severity2ClientBanCommand: "/ban %target% %t% %reason% -s"
 
 #Serv 3 Client Ban
 Severity3ClientBanCommand: "/ban %target% %t% %reason% -s"
+
+#Serv 1 Admitido Ban
+Severity1AdmitidoBanCommand: "/ban %target% %t% %reason% -s"
+
+#Serv 2 Admitido Ban
+Severity2AdmitidoBanCommand: "/ban %target% %t% %reason% -s"
+
+#Serv 3 Admitido Ban
+Severity3AdmitidoBanCommand: "/ban %target% %t% %reason% -s"
 
 #Warm
 WarnCommand: "/warn %target% %reason% -s"
