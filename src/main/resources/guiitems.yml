@@ -13,6 +13,13 @@ ClientModOffensesLocation: 14
 ClientModOffensesName: "&a&lClient Mod Offenses"
 ClientModOffensesLore: 
   - '&7X-ray, Forcefield, Speed, Fly, Inventory Hacks, etc'
+  
+#AdmitidoOffenses:
+AdmitidoOffensesItem: "BOOK_AND_QUILL"
+AdmitidoOffensesLocation: 13
+AdmitidoOffensesName: "&a&lClient Mod Offenses"
+AdmitidoOffensesLore: 
+  - '&7X-ray, Forcefield, Speed, Fly, Inventory Hacks, etc'
 
 #GeneralOffenses:
 GeneralOffensesItem: "HOPPER"
@@ -22,26 +29,12 @@ GeneralOffensesLore:
   - '&7Command/Map/Class/Skill exploits, etc'
 
 #ChatOffenses:
-ChatOffensesItem: "BOOK_AND_QUILL"
+ChatOffensesItem: "PAPER"
 ChatOffensesLocation: 10
 ChatOffensesName: "&a&lChat Offenses"
 ChatOffensesLore: 
   - '&7Verbal Abuse, Spam, Harassment, Trolling, etc'
 
-
-#Other Punishments:
-
-#Warning:
-WarningItem: "ANVIL"
-WarningLocation: 43
-WarningName: "&a&lWarning"
-WarningLore:
-  - ' '
-  - '&7Example Warning Input:'
-  - '&fSpam - Repeatedly writing MEOW'
-  - '&fHack Accusation - Accused Tomp13 of hacking'
-  - '&fTrolling - was trying to make bob angry in chat '
-  - ' '
 
 #ChatPunishments:
 
@@ -144,6 +137,40 @@ Severity1GeneralBanLore:
   - '&7Map/Bug Exploiting'
   - '&fAbusing an exploit to gain an advantage'
   - ' '
+  
+#Severity2GeneralBan:
+Severity2GeneralBanItem: "INK_SACK"
+Severity2GeneralBanLocation: 21
+Severity2GeneralBanName: "&a&lSeverity 1"
+Severity2GeneralBanLore:
+  - '&fBan Duration: &e1 Hour'
+  - ' '
+  - '&7Team Killing'
+  - '&fIntentionally killing your team'
+  - ' '
+  - '&7Trolling (Gameplay)'
+  - '&fUsing abilities to trap players in spawn'
+  - ' ' 
+  - '&7Map/Bug Exploiting'
+  - '&fAbusing an exploit to gain an advantage'
+  - ' '
+  
+#Severity3GeneralBan:
+Severity3GeneralBanItem: "INK_SACK"
+Severity3GeneralBanLocation: 21
+Severity3GeneralBanName: "&a&lSeverity 1"
+Severity3GeneralBanLore:
+  - '&fBan Duration: &e1 Hour'
+  - ' '
+  - '&7Team Killing'
+  - '&fIntentionally killing your team'
+  - ' '
+  - '&7Trolling (Gameplay)'
+  - '&fUsing abilities to trap players in spawn'
+  - ' ' 
+  - '&7Map/Bug Exploiting'
+  - '&fAbusing an exploit to gain an advantage'
+  - ' '
 
 #Severity1ClientBan:
 Severity1ClientBanItem: "INK_SACK"
@@ -186,6 +213,57 @@ Severity3ClientBanLore:
   - '&fFly Hack'
   - '&fOther Hack'
   - '&cAlso for second offenders!'
+  - ' '
+  
+#Severity1AdmitidoBan:
+Severity1AdmitidoBanItem: "INK_SACK"
+Severity1AdmitidoBanLocation: 21
+Severity1AdmitidoBanName: "&a&lSeverity 1"
+Severity1AdmitidoBanLore:
+  - '&fBan Duration: &e1 Hour'
+  - ' '
+  - '&7Team Killing'
+  - '&fIntentionally killing your team'
+  - ' '
+  - '&7Trolling (Gameplay)'
+  - '&fUsing abilities to trap players in spawn'
+  - ' ' 
+  - '&7Map/Bug Exploiting'
+  - '&fAbusing an exploit to gain an advantage'
+  - ' '
+  
+#Severity2AdmitidoBan:
+Severity2AdmitidoBanItem: "INK_SACK"
+Severity2AdmitidoBanLocation: 21
+Severity2AdmitidoBanName: "&a&lSeverity 1"
+Severity2AdmitidoBanLore:
+  - '&fBan Duration: &e1 Hour'
+  - ' '
+  - '&7Team Killing'
+  - '&fIntentionally killing your team'
+  - ' '
+  - '&7Trolling (Gameplay)'
+  - '&fUsing abilities to trap players in spawn'
+  - ' ' 
+  - '&7Map/Bug Exploiting'
+  - '&fAbusing an exploit to gain an advantage'
+  - ' '
+  
+#Severity3AdmitidoBan:
+Severity3AdmitidoBanItem: "INK_SACK"
+Severity3AdmitidoBanLocation: 21
+Severity3AdmitidoBanName: "&a&lSeverity 1"
+Severity3AdmitidoBanLore:
+  - '&fBan Duration: &e1 Hour'
+  - ' '
+  - '&7Team Killing'
+  - '&fIntentionally killing your team'
+  - ' '
+  - '&7Trolling (Gameplay)'
+  - '&fUsing abilities to trap players in spawn'
+  - ' ' 
+  - '&7Map/Bug Exploiting'
+  - '&fAbusing an exploit to gain an advantage'
   - ' '
 
 #IPMute:
