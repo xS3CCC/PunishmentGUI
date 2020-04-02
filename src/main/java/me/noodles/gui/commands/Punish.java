@@ -57,14 +57,19 @@ public class Punish implements Listener, CommandExecutor {
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("GeneralOffensesLocation"), Items.GeneralOffences(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("ClientModOffensesLocation"), Items.ClientModOffences(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity1MuteLocation"), Items.Severity1Mute(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity2MuteLocation"), Items.Severity1Mute(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity3MuteLocation"), Items.Severity1Mute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity1GeneralBanLocation"), Items.Severity1GeneralBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity2GeneralBanLocation"), Items.Severity2GeneralBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity3GeneralBanLocation"), Items.Severity3GeneralBan(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity1ClientBanLocation"), Items.Severity1ClientBan(p));
-		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("PermanentMuteLocation"), Items.PermMute(p));
-		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity2MuteLocation"), Items.Severity2Mute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity2ClientBanLocation"), Items.Severity2ClientBan(p));
-		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("PermanentBanLocation"), Items.PermBan(p));
-		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity3MuteLocation"), Items.Severity3Mute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity3ClientBanLocation"), Items.Severity3ClientBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity1AdmitidoBanLocation"), Items.Severity1AdmitidoBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity2AdmitidoBanLocation"), Items.Severity2AdmitidoBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("Severity3AdmitidoBanLocation"), Items.Severity3AdmitidoBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("PermanentBanLocation"), Items.PermBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("PermanentMuteLocation"), Items.PermMute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("IPBanLocation"), Items.IPBan(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("IPMuteLocation"), Items.IPMute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("WarningLocation"), Items.Warning(p));
@@ -118,6 +123,22 @@ public class Punish implements Listener, CommandExecutor {
 
 				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
 			}
+			
+			if (e.getCurrentItem().equals(Items.Severity2GeneralBan(p))) {
+				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("Severity2GeneralBanCommand").replace("%t%", PunishmentGUI.getPlugin().getBanReason().getString("Severity2GeneralBanTime")).replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("Severity2GeneralBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("Severity2GeneralBanMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
+				p.closeInventory();
+
+				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
+			}
+			
+			if (e.getCurrentItem().equals(Items.Severity3GeneralBan(p))) {
+				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("Severity3GeneralBanCommand").replace("%t%", PunishmentGUI.getPlugin().getBanReason().getString("Severity3GeneralBanTime")).replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("Severity3GeneralBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("Severity3GeneralBanMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
+				p.closeInventory();
+
+				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
+			}
 
 			if (e.getCurrentItem().equals(Items.Severity1ClientBan(p))) {
 				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("Severity1ClientBanCommand").replace("%t%", PunishmentGUI.getPlugin().getBanReason().getString("Severity1ClientBanTime")).replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("Severity1ClientBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
@@ -154,6 +175,30 @@ public class Punish implements Listener, CommandExecutor {
 			if (e.getCurrentItem().equals(Items.Severity3ClientBan(p))) {
 				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("Severity3ClientBanCommand").replace("%t%", PunishmentGUI.getPlugin().getBanReason().getString("Severity3ClientBanTime")).replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("Severity3ClientBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
 				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("Severity3ClientBanMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
+				p.closeInventory();
+
+				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
+			}
+			
+			if (e.getCurrentItem().equals(Items.Severity1AdmitidoBan(p))) {
+				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("Severity1AdmitidoBanCommand").replace("%t%", PunishmentGUI.getPlugin().getBanReason().getString("Severity1AdmitidoBanTime")).replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("Severity1AdmitidoBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("Severity1AdmitidoBanMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
+				p.closeInventory();
+
+				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
+			}
+			
+			if (e.getCurrentItem().equals(Items.Severity2AdmitidoBan(p))) {
+				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("Severity2AdmitidoBanCommand").replace("%t%", PunishmentGUI.getPlugin().getBanReason().getString("Severity2AdmitidoBanTime")).replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("Severity2AdmitidoBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("Severity2AdmitidoBanMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
+				p.closeInventory();
+
+				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
+			}
+			
+			if (e.getCurrentItem().equals(Items.Severity3AdmitidoBan(p))) {
+				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("Severity3AdmitidoBanCommand").replace("%t%", PunishmentGUI.getPlugin().getBanReason().getString("Severity3AdmitidoBanTime")).replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("Severity3AdmitidoBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("Severity3AdmitidoBanMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
 				p.closeInventory();
 
 				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
