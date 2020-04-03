@@ -13,7 +13,7 @@ PermMuteReason: "Severe Advertising"
 #Severity1Mute:
 Severity1MuteMessage: "&7Muted %player% for 1h for Hackusations/Light Abuse/Harassment/Light Advertising/Light Spam!"
 Severity1MuteReason: "Hackusations/Light Abuse/Harassment/Light Advertising/Light Spam"
-Severity1MuteTime: "1h"
+Severity1MuteTime: "3h"
 
 #Severity2Mute:
 Severity2MuteMessage: "&7Muted %player% for 1w for Medium Spam/Medium Advertising/Medium Abuse/Harassment/Avoiding Chat Filter!"
@@ -32,47 +32,47 @@ PermBanReason: "Permanent Ban"
 #Severity1GeneralBan:
 Severity1GeneralBanMessage: "&7Banned %player% for 1h for Team Killing/Trolling (Gameplay)/Map/Bug Exploiting!"
 Severity1GeneralBanReason: "Team Killing/Trolling (Gameplay)/Map/Bug Exploiting"
-Severity1GeneralBanTime: "1h"
+Severity1GeneralBanTime: "10d"
 
 #Severity2GeneralBan:
 Severity2GeneralBanMessage: "&7Banned %player% for 1h for Team Killing/Trolling (Gameplay)/Map/Bug Exploiting!"
 Severity2GeneralBanReason: "Team Killing/Trolling (Gameplay)/Map/Bug Exploiting"
-Severity2GeneralBanTime: "1h"
+Severity2GeneralBanTime: "20d"
 
 #Severity3GeneralBan:
 Severity3GeneralBanMessage: "&7Banned %player% for 1h for Team Killing/Trolling (Gameplay)/Map/Bug Exploiting!"
 Severity3GeneralBanReason: "Team Killing/Trolling (Gameplay)/Map/Bug Exploiting"
-Severity3GeneralBanTime: "1h"
+Severity3GeneralBanTime: "40d"
 
 #Severity1ClientBan:
 Severity1ClientBanMessage: "&7Banned %player% for 1d for Player Radar/Damage Indicators!"
 Severity1ClientBanReason: "Player Radar/Damage Indicators"
-Severity1ClientBanTime: "1d"
+Severity1ClientBanTime: "5d"
 
 #Severity2ClientBan:
 Severity2ClientBanMessage: "&7Banned %player% for 1w for Forcefield/Speed Hack/Reach Hack/Other Hack - First Offense!"
 Severity2ClientBanReason: "Forcefield/Speed Hack/Reach Hack/Other Hack - First Offense"
-Severity2ClientBanTime: "1w"
+Severity2ClientBanTime: "10d"
 
 #Severity3ClientBan:
 Severity3ClientBanMessage: "&7Banned %player% for 1 month for Fly Hack/Forcefield/Speed Hack/Reach Hack/Other Hack - Also for second offenders!"
 Severity3ClientBanReason: "Fly Hack/Forcefield/Speed Hack/Reach Hack/Other Hack"
-Severity3ClientBanTime: "30d"
+Severity3ClientBanTime: "40d"
 
 #Severity1AdmitidoBan:
 Severity1AdmitidoBanMessage: "&7Banned %player% for 1h for Team Killing/Trolling (Gameplay)/Map/Bug Exploiting!"
 Severity1AdmitidoBanReason: "Team Killing/Trolling (Gameplay)/Map/Bug Exploiting"
-Severity1AdmitidoBanTime: "1h"
+Severity1AdmitidoBanTime: "5d"
 
 #Severity2AdmitidoBan:
 Severity2AdmitidoBanMessage: "&7Banned %player% for 1h for Team Killing/Trolling (Gameplay)/Map/Bug Exploiting!"
 Severity2AdmitidoBanReason: "Team Killing/Trolling (Gameplay)/Map/Bug Exploiting"
-Severity2AdmitidoBanTime: "1h"
+Severity2AdmitidoBanTime: "10d"
 
 #Severity3AdmitidoBan:
 Severity3AdmitidoBanMessage: "&7Banned %player% for 1h for Team Killing/Trolling (Gameplay)/Map/Bug Exploiting!"
 Severity3AdmitidoBanReason: "Team Killing/Trolling (Gameplay)/Map/Bug Exploiting"
-Severity3AdmitidoBanTime: "1h"
+Severity3AdmitidoBanTime: "20d"
 
 #IPBAN:
 IPBanMessage: "&7Banned %player% for Network IP Ban!"
@@ -88,4 +88,4 @@ StaffIPReason: "IPBAN - Network Ban"
 
 #EvadirBAN:
 EvadirBANMessage: "&7Muted %player% for Network IP Mute!"
-EvadirBANReason: "IPMUTE - Network Mute"
+EvadirBANReason: "IPBAN - Network Ban"
