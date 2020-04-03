@@ -102,6 +102,22 @@ public class Items {
             PunishmentGUI.getPlugin().getGuiItems().getStringList("IPMuteLore")
         );
     }
+    
+    public static ItemStack StaffIP(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("StaffIPItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("StaffIPName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("StaffIPLore")
+        );
+    }
+
+    public static ItemStack EvadirBAN(Player p) {
+        return createItemFromConfig(
+            PunishmentGUI.getPlugin().getGuiItems().getString("EvadirBANItem"),
+            PunishmentGUI.getPlugin().getGuiItems().getString("EvadirBANName"),
+            PunishmentGUI.getPlugin().getGuiItems().getStringList("EvadirBANLore")
+        );
+    }
 
     public static ItemStack Severity1Mute(Player p) {
         return createItemFromConfig(
