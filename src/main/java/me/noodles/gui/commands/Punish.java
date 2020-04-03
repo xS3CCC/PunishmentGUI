@@ -73,6 +73,8 @@ public class Punish implements Listener, CommandExecutor {
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("PermanentMuteLocation"), Items.PermMute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("IPBanLocation"), Items.IPBan(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("IPMuteLocation"), Items.IPMute(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("StaffIPLocation"), Items.IPBan(p));
+		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("EvadirBANLocation"), Items.IPMute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("WarningLocation"), Items.Warning(p));
 
 		if (PunishmentGUI.getPlugin().getGuiItems().getBoolean("FillerEnabled")) {
@@ -224,6 +226,22 @@ public class Punish implements Listener, CommandExecutor {
 			if (e.getCurrentItem().equals(Items.IPBan(p))) {
 				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("IPBanCommand").replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("IPBanReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
 				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("IPBanMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
+				p.closeInventory();
+
+				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
+			}
+			
+			if (e.getCurrentItem().equals(Items.StaffIP(p))) {
+				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("StaffIPCommand").replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("StaffIPReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("StaffIPMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
+				p.closeInventory();
+
+				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
+			}
+
+			if (e.getCurrentItem().equals(Items.EvadirBAN(p))) {
+				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("EvadirBANCommand").replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("EvadirBANReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
+				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("EvadirBANMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
 				p.closeInventory();
 
 				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
