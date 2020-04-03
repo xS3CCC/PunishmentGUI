@@ -15,6 +15,12 @@ PermMuteCommand: "/mute %target% %reason% -s"
 #IPMute
 IPMuteCommand: "/ipmute %target% %reason% -s"
 
+#StaffIP
+StaffIPCommand: "/ipban %target% %reason% -s"
+
+#EvadirBAN
+EvadirBANCommand: "/ipban %target% %reason% -s"
+
 #Perm Ban
 PermBanCommand: "/ban %target% %reason% -s"
 
