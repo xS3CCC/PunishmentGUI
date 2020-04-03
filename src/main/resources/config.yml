@@ -22,10 +22,10 @@ SilentStart:
 #/punish (playername) - punish.use
 #=======================================================
 #Main Command Messages:
-Prefix: "&8Punish &7>> "
-NoMessage: "&cInvalid! Use like /punish (player)!"
-NoPermission: "&c(!) You don't have permission to use this command!"
-NoPlayer: "Only players can use this command!"
-NameLength: "&cThis name is too long! You can only enter 16 characters!"
+Prefix: "&8ErrBan &7>> "
+NoMessage: "&c¡Invalido! Usa /punish (jugador)!"
+NoPermission: "&c(!) ¡No tienes permiso para usar este comandos!"
+NoPlayer: "¡Solo un jugador puede ejecutar este comando!"
+NameLength: "&c¡Este nombre es muy largo! ¡Solo puedes poner 16 carecteres!"
 #=======================================================
-InventoryName: "&c&lPunishments"
+InventoryName: "&c&lBANEOS / AVISOS"
