@@ -47,7 +47,7 @@ public class Items {
         );
     }
 
-    public static ItemStack AdmitidoOffences(Player p) {
+    public static ItemStack AdmitidoOffenses(Player p) {
         return createItemFromConfig(
             PunishmentGUI.getPlugin().getGuiItems().getString("AdmitidoOffensesItem"),
             PunishmentGUI.getPlugin().getGuiItems().getString("AdmitidoOffensesName"),

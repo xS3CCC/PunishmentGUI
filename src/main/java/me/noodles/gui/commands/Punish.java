@@ -75,7 +75,6 @@ public class Punish implements Listener, CommandExecutor {
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("IPMuteLocation"), Items.IPMute(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("StaffIPLocation"), Items.StaffIP(p));
 		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("EvadirBANLocation"), Items.EvadirBAN(p));
-		InvCreator.Main.setItem(PunishmentGUI.getPlugin().getGuiItems().getInt("WarningLocation"), Items.Warning(p));
 
 		if (PunishmentGUI.getPlugin().getGuiItems().getBoolean("FillerEnabled")) {
 			for (int i = 0; i < 54; ++i) {
