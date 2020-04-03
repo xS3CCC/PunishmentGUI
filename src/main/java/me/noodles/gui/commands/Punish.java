@@ -246,14 +246,6 @@ public class Punish implements Listener, CommandExecutor {
 				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
 			}
 
-			if (e.getCurrentItem().equals(Items.Warning(p))) {
-				p.chat(PunishmentGUI.getPlugin().getGuiCommands().getString("WarnCommand").replace("%reason%", PunishmentGUI.getPlugin().getBanReason().getString("WarnReason")).replace("%target%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId())));
-				p.sendMessage(ChatColor.translateAlternateColorCodes('&', PunishmentGUI.getPlugin().getConfig().getString("Prefix") + PunishmentGUI.getPlugin().getBanReason().getString("WarnMessage").replace("%player%", PunishmentGUI.getPlugin().getBannedManager().get(p.getUniqueId()))));
-				p.closeInventory();
-
-				PunishmentGUI.getPlugin().getBannedManager().remove(p.getUniqueId());
-			}
-
 		}
 	}
 
