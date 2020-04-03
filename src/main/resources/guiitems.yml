@@ -282,4 +282,21 @@ IPBanLore:
 - '&fBan Duration: &eIP BAN'
 - ' '
 - ' '
+
+#StaffIP:
+StaffIPItem: "TNT"
+StaffIPLocation: 7
+StaffIPName: "&a&lIP Mute"
+StaffIPLore:
+- '&fMute Duration: &eIP MUTE'
+- ' '
+- ' '
+#EvadirBAN:
+EvadirBANItem: "TNT"
+EvadirBANLocation: 8
+EvadirBANName: "&a&lIP BAN"
+EvadirBANLore:
+- '&fBan Duration: &eIP BAN'
+- ' '
+- ' '
   
