@@ -8,7 +8,7 @@ FillerEnabled: true
 GUIFillerItem: "STAINED_GLASS_PANE:7"
 
 #ClientModOffenses:
-ClientModOffensesItem: "IRON_SWORD"
+ClientModOffensesItem: "ENCHANTED_BOOK"
 ClientModOffensesLocation: 14
 ClientModOffensesName: "&a&lClient Mod Offenses"
 ClientModOffensesLore: 
@@ -22,14 +22,14 @@ AdmitidoOffensesLore:
   - '&7X-ray, Forcefield, Speed, Fly, Inventory Hacks, etc'
 
 #GeneralOffenses:
-GeneralOffensesItem: "HOPPER"
+GeneralOffensesItem: "ENCHANTED_BOOK"
 GeneralOffensesLocation: 12
 GeneralOffensesName: "&a&lGeneral Offenses"
 GeneralOffensesLore:
   - '&7Command/Map/Class/Skill exploits, etc'
 
 #ChatOffenses:
-ChatOffensesItem: "PAPER"
+ChatOffensesItem: "BOOK"
 ChatOffensesLocation: 10
 ChatOffensesName: "&a&lChat Offenses"
 ChatOffensesLore: 
@@ -140,8 +140,8 @@ Severity1GeneralBanLore:
   
 #Severity2GeneralBan:
 Severity2GeneralBanItem: "INK_SACK"
-Severity2GeneralBanLocation: 21
-Severity2GeneralBanName: "&a&lSeverity 1"
+Severity2GeneralBanLocation: 30
+Severity2GeneralBanName: "&a&lSeverity 2"
 Severity2GeneralBanLore:
   - '&fBan Duration: &e1 Hour'
   - ' '
@@ -157,8 +157,8 @@ Severity2GeneralBanLore:
   
 #Severity3GeneralBan:
 Severity3GeneralBanItem: "INK_SACK"
-Severity3GeneralBanLocation: 21
-Severity3GeneralBanName: "&a&lSeverity 1"
+Severity3GeneralBanLocation: 39
+Severity3GeneralBanName: "&a&lSeverity 3"
 Severity3GeneralBanLore:
   - '&fBan Duration: &e1 Hour'
   - ' '
@@ -217,7 +217,7 @@ Severity3ClientBanLore:
   
 #Severity1AdmitidoBan:
 Severity1AdmitidoBanItem: "INK_SACK"
-Severity1AdmitidoBanLocation: 21
+Severity1AdmitidoBanLocation: 22
 Severity1AdmitidoBanName: "&a&lSeverity 1"
 Severity1AdmitidoBanLore:
   - '&fBan Duration: &e1 Hour'
@@ -234,7 +234,7 @@ Severity1AdmitidoBanLore:
   
 #Severity2AdmitidoBan:
 Severity2AdmitidoBanItem: "INK_SACK"
-Severity2AdmitidoBanLocation: 21
+Severity2AdmitidoBanLocation: 31
 Severity2AdmitidoBanName: "&a&lSeverity 1"
 Severity2AdmitidoBanLore:
   - '&fBan Duration: &e1 Hour'
@@ -251,7 +251,7 @@ Severity2AdmitidoBanLore:
   
 #Severity3AdmitidoBan:
 Severity3AdmitidoBanItem: "INK_SACK"
-Severity3AdmitidoBanLocation: 21
+Severity3AdmitidoBanLocation: 40
 Severity3AdmitidoBanName: "&a&lSeverity 1"
 Severity3AdmitidoBanLore:
   - '&fBan Duration: &e1 Hour'
@@ -285,7 +285,7 @@ IPBanLore:
 
 #StaffIP:
 StaffIPItem: "TNT"
-StaffIPLocation: 7
+StaffIPLocation: 39
 StaffIPName: "&a&lIP Mute"
 StaffIPLore:
 - '&fMute Duration: &eIP MUTE'
@@ -293,7 +293,7 @@ StaffIPLore:
 - ' '
 #EvadirBAN:
 EvadirBANItem: "TNT"
-EvadirBANLocation: 8
+EvadirBANLocation: 40
 EvadirBANName: "&a&lIP BAN"
 EvadirBANLore:
 - '&fBan Duration: &eIP BAN'
