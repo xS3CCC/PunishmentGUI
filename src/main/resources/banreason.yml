@@ -81,3 +81,11 @@ IPBanReason: "IPBAN - Network Ban"
 #IPMUTE:
 IPMuteMessage: "&7Muted %player% for Network IP Mute!"
 IPMuteReason: "IPMUTE - Network Mute"
+
+#StaffIP:
+StaffIPMessage: "&7Banned %player% for Network IP Ban!"
+StaffIPReason: "IPBAN - Network Ban"
+
+#EvadirBAN:
+EvadirBANMessage: "&7Muted %player% for Network IP Mute!"
+EvadirBANReason: "IPMUTE - Network Mute"
