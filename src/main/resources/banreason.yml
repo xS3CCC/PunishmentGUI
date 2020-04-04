@@ -3,12 +3,12 @@
 #LiteBans & Advanced Ban Example: 1w (1 week), 5y (5 years), 1h (1 hour), etc.
 #=======================================================
 #Warning:
-WarnMessage: "&7Warned %player% Spam/Swearing/Hack Accusation/Trolling"
-WarnReason: "Spam/Swearing/Hack Accusation/Trolling"
+WarnMessage: "&7Se ha avisado a %player%"
+WarnReason: "Abusos en el chat"
 
 #PermMute:
-PermMuteMessage: "&7Muted %player% forever for Severe Advertising!"
-PermMuteReason: "Severe Advertising"
+PermMuteMessage: "&7Se ha muteado a %player% para siempre"
+PermMuteReason: "Spam severo"
 
 #Severity1Mute:
 Severity1MuteMessage: "&7Muted %player% for 1h for Hackusations/Light Abuse/Harassment/Light Advertising/Light Spam!"
